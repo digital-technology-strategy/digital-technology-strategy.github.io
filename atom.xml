@@ -6,7 +6,7 @@
   <link href="https://dts.plus/atom.xml" rel="self"/>
   
   <link href="https://dts.plus/"/>
-  <updated>2021-03-22T13:27:23.994Z</updated>
+  <updated>2021-03-22T14:09:02.666Z</updated>
   <id>https://dts.plus/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>数字技术战略：开发者体验</title>
+    <title>数字技术战略： 内湖 —— 超越中台思想的文化方式</title>
+    <link href="https://dts.plus/dts-innersouce/"/>
+    <id>https://dts.plus/dts-innersouce/</id>
+    <published>2021-03-22T14:06:02.000Z</published>
+    <updated>2021-03-22T14:09:02.666Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;内源即将开源方法（最佳实践、协作方式、架构模式等）融入到组织的软件构建和发布方式之中，以在组织内构建类似开源的文化。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作为一个站在国内开源前线的开发者（GitHub 国内 Top</summary>
+        
+      
+    
+    
+    
+    
+    <category term="DTS" scheme="https://dts.plus/tags/DTS/"/>
+    
+    <category term="数字技术趋势" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"/>
+    
+    <category term="Digital Technologhy" scheme="https://dts.plus/tags/Digital-Technologhy/"/>
+    
+    <category term="内源" scheme="https://dts.plus/tags/%E5%86%85%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字技术战略：开发者体验 —— 内部工具的“最后一公里”</title>
     <link href="https://dts.plus/digital-tech-strategy-developer-experience/"/>
     <id>https://dts.plus/digital-tech-strategy-developer-experience/</id>
     <published>2021-03-22T13:25:44.000Z</published>
-    <updated>2021-03-22T13:27:23.994Z</updated>
+    <updated>2021-03-22T14:09:02.666Z</updated>
     
     
       
@@ -35,6 +67,14 @@
     
     
     
+    <category term="DTS" scheme="https://dts.plus/tags/DTS/"/>
+    
+    <category term="数字技术趋势" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"/>
+    
+    <category term="Digital Technologhy" scheme="https://dts.plus/tags/Digital-Technologhy/"/>
+    
+    <category term="内源" scheme="https://dts.plus/tags/%E5%86%85%E6%BA%90/"/>
+    
   </entry>
   
   <entry>
@@ -42,7 +82,7 @@
     <link href="https://dts.plus/2021-tech-strategy/"/>
     <id>https://dts.plus/2021-tech-strategy/</id>
     <published>2020-12-17T05:25:09.000Z</published>
-    <updated>2021-03-22T13:27:23.994Z</updated>
+    <updated>2021-03-22T14:09:02.666Z</updated>
     
     
       
