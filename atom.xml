@@ -6,7 +6,7 @@
   <link href="https://dts.plus/atom.xml" rel="self"/>
   
   <link href="https://dts.plus/"/>
-  <updated>2020-12-17T05:44:05.751Z</updated>
+  <updated>2021-08-16T09:49:51.000Z</updated>
   <id>https://dts.plus/</id>
   
   <author>
@@ -17,28 +17,189 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2021 数字化技术趋势</title>
+    <title>数字技术战略：团队拓扑，数字化技术团队定位</title>
+    <link href="https://dts.plus/cloud-dev-define-develeoper/"/>
+    <id>https://dts.plus/cloud-dev-define-develeoper/</id>
+    <published>2021-08-15T11:46:46.000Z</published>
+    <updated>2021-08-16T09:49:51.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;或是项目的原因，或是写作的原因，一直在思考『如何在云原生时代设计团队的协作？』以及『如何在云原生时代，重新定位开发人员的位置？』。起初，我只有一些细碎、不成体系的定义，直到这周公司大佬在内部分享了&lt;strong&gt;团队拓扑&lt;/strong&gt;的理念之后。我终于找到一种合适的方式</summary>
+        
+      
+    
+    
+    
+    
+    <category term="DTS" scheme="https://dts.plus/tags/DTS/"/>
+    
+    <category term="数字技术趋势" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"/>
+    
+    <category term="云原生" scheme="https://dts.plus/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/"/>
+    
+    <category term="团队拓扑" scheme="https://dts.plus/tags/%E5%9B%A2%E9%98%9F%E6%8B%93%E6%89%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字技术战略：技术产品化运营</title>
+    <link href="https://dts.plus/technology-product-marketing/"/>
+    <id>https://dts.plus/technology-product-marketing/</id>
+    <published>2021-08-01T10:46:38.000Z</published>
+    <updated>2021-08-15T08:38:08.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt; 技术产品化运营，是将技术产品（如开放</summary>
+        
+      
+    
+    
+    
+    
+    <category term="内源" scheme="https://dts.plus/tags/%E5%86%85%E6%BA%90/"/>
+    
+    <category term="开发者体验" scheme="https://dts.plus/tags/%E5%BC%80%E5%8F%91%E8%80%85%E4%BD%93%E9%AA%8C/"/>
+    
+    <category term="数字技术化转型" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E5%8C%96%E8%BD%AC%E5%9E%8B/"/>
+    
+    <category term="技术产品化运营" scheme="https://dts.plus/tags/%E6%8A%80%E6%9C%AF%E4%BA%A7%E5%93%81%E5%8C%96%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="开源" scheme="https://dts.plus/tags/%E5%BC%80%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字技术战略：中大型组织 DevOps 成熟度模型</title>
+    <link href="https://dts.plus/dts-scaling-devops/"/>
+    <id>https://dts.plus/dts-scaling-devops/</id>
+    <published>2021-07-31T13:31:59.000Z</published>
+    <updated>2021-07-31T13:50:38.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;DevOps 转型是一件颇有挑战性的工作。它并不是一个简单的工具或者平台的使用、运维能力提升。特别是在中大型组织中，它涉及到一系列的组织问题。&lt;/p&gt;
+&lt;p&gt;而传统的 DevOps 成熟度模型过于撕裂与分散，无法适用于大型组织。DevOps 厂商与云厂商的 DevOps</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Thoughtworks" scheme="https://dts.plus/tags/Thoughtworks/"/>
+    
+    <category term="数字技术化转型" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E5%8C%96%E8%BD%AC%E5%9E%8B/"/>
+    
+    <category term="DevOps" scheme="https://dts.plus/tags/DevOps/"/>
+    
+    <category term="成熟度模型" scheme="https://dts.plus/tags/%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字技术战略： 内源 —— 超越中台思想的文化方式</title>
+    <link href="https://dts.plus/dts-innersouce/"/>
+    <id>https://dts.plus/dts-innersouce/</id>
+    <published>2021-03-22T14:06:02.000Z</published>
+    <updated>2021-07-31T13:50:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;内源即将开源方法（最佳实践、协作方式、架构模式等）融入到组织的软件构建和发布方式之中，以在组织内构建类似开源的文化。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作为一个站在国内开源前线的开发者（GitHub 国内 Top</summary>
+        
+      
+    
+    
+    
+    
+    <category term="DTS" scheme="https://dts.plus/tags/DTS/"/>
+    
+    <category term="数字技术趋势" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"/>
+    
+    <category term="Digital Technologhy" scheme="https://dts.plus/tags/Digital-Technologhy/"/>
+    
+    <category term="内源" scheme="https://dts.plus/tags/%E5%86%85%E6%BA%90/"/>
+    
+    <category term="Thoughtworks" scheme="https://dts.plus/tags/Thoughtworks/"/>
+    
+    <category term="中台" scheme="https://dts.plus/tags/%E4%B8%AD%E5%8F%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字技术战略：开发者体验 —— 内部工具的“最后一公里”</title>
+    <link href="https://dts.plus/digital-tech-strategy-developer-experience/"/>
+    <id>https://dts.plus/digital-tech-strategy-developer-experience/</id>
+    <published>2021-03-22T13:25:44.000Z</published>
+    <updated>2021-07-31T13:50:19.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是一篇迟来的文章，我本应该在很早之前写完，但是一直都发现时机不够成熟。去年，在经历了多个低代码前端项目的售前，以及一个低代码项目的技术实践强化，国内的 IT</summary>
+        
+      
+    
+    
+    
+    
+    <category term="数字技术趋势" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"/>
+    
+    <category term="Digital Technologhy" scheme="https://dts.plus/tags/Digital-Technologhy/"/>
+    
+    <category term="内源" scheme="https://dts.plus/tags/%E5%86%85%E6%BA%90/"/>
+    
+    <category term="Thoughtworks" scheme="https://dts.plus/tags/Thoughtworks/"/>
+    
+    <category term="开发者体验" scheme="https://dts.plus/tags/%E5%BC%80%E5%8F%91%E8%80%85%E4%BD%93%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021 数字技术趋势</title>
     <link href="https://dts.plus/2021-tech-strategy/"/>
     <id>https://dts.plus/2021-tech-strategy/</id>
     <published>2020-12-17T05:25:09.000Z</published>
-    <updated>2020-12-17T05:44:05.751Z</updated>
+    <updated>2021-07-31T13:50:07.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;区别：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;本土化崛起。工业 + 新基建&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;本土开源&quot;&gt;&lt;a href=&quot;#本土开源&quot; class=&quot;headerlink&quot; title=&quot;本土开源&quot;&gt;&lt;/a&gt;本土开源&lt;/h2&gt;&lt;p&gt;内源 +</summary>
+    <summary type="html">&lt;p&gt;过去的一周，因为在准备下一年的计划，也大致地对下一年的一些技术趋势做了一些预测。站在 2020 年的年底的来看，在 2021</summary>
         
       
     
     
     
+    
+    <category term="DTS" scheme="https://dts.plus/tags/DTS/"/>
+    
+    <category term="数字技术趋势" scheme="https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/"/>
+    
+    <category term="Digital Technologhy" scheme="https://dts.plus/tags/Digital-Technologhy/"/>
+    
+    <category term="Thoughtworks" scheme="https://dts.plus/tags/Thoughtworks/"/>
     
   </entry>
   

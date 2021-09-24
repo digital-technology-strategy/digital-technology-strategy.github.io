@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>数字技术战略：开发者体验 —— 内部工具的“最后一公里” · 数字技术战略研究实验室</title><meta name="description" content="这是一篇迟来的文章，我本应该在很早之前写完，但是一直都发现时机不够成熟。去年，在经历了多个低代码前端项目的售前，以及一个低代码项目的技术实践强化，国内的 IT 企业缺乏对于『开发者体验』缺乏系统性的思考。
+来，先我们来看一个开发者体验（DX，Developer Experience）的定义：
+
+开发"><meta name="keywords" content="DTS, digital technology strategy, tech strategy, 技术趋势, 技术战略, 数字技术战略"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">用最合适的方式推动数字化转型落地</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">数字战略研究所</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li class="soc"><a href="https://github.com/digital-technology-strategy" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="https://dts.plus/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">闽ICP备17004100号</a></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>数字技术战略：开发者体验 —— 内部工具的“最后一公里”</a></p><p class="post-meta"><span>Phodal HUANG</span><span class="date meta-item">发布于&nbsp;2021-03-22</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/数字技术趋势/" title="数字技术趋势" class="a-tag">数字技术趋势</a><span>&nbsp;</span><a href="/tags/Digital-Technologhy/" title="Digital Technologhy" class="a-tag">Digital Technologhy</a><span>&nbsp;</span><a href="/tags/内源/" title="内源" class="a-tag">内源</a><span>&nbsp;</span><a href="/tags/Thoughtworks/" title="Thoughtworks" class="a-tag">Thoughtworks</a><span>&nbsp;</span><a href="/tags/开发者体验/" title="开发者体验" class="a-tag">开发者体验</a><span>&nbsp;</span></span></p><p class="post-abstract"><p>这是一篇迟来的文章，我本应该在很早之前写完，但是一直都发现时机不够成熟。去年，在经历了多个低代码前端项目的售前，以及一个低代码项目的技术实践强化，国内的 IT 企业缺乏对于『开发者体验』缺乏系统性的思考。</p>
+<p>来，先我们来看一个开发者体验（DX，Developer Experience）的定义：</p>
+<blockquote>
+<p>开发者体验，与用户体验类似，只是对象是软件开发人员。将之与国际进行对应，便是开发人员对于针对使用或期望使用的产品、系统或者服务的认知印象和回应。有所不同的是，用户关注的内容变为库，SDK，文档，框架，开源解决方案，通用工具，API 等的开发人员的体验。 </p>
+</blockquote>
+<p>而完善开发者体验是有一些基础条件的：</p>
+<ul>
+<li>稳定性。SDK、库、框架等具备满足使用方持续可用的状态。</li>
+<li>功能完备。可以满足大部分的正常的功能需求。</li>
+</ul>
+<p>简单来说，就是只有在可用的情况下，设计开发者体验会更加有价值，即开发者体验是一个加分项。而如果我们能在开发的前期就考虑用户体验的话，它会为后续的开发带来便利。</p>
+<h2 id="开发者在体验什么？"><a href="#开发者在体验什么？" class="headerlink" title="开发者在体验什么？"></a>开发者在体验什么？</h2><p>什么是开发者体验？那不就是让开发人员觉得爽吗。</p>
+<p>什么才叫爽呢？来一起看几个例子。</p>
+<h3 id="安装谁更简单？"><a href="#安装谁更简单？" class="headerlink" title="安装谁更简单？"></a>安装谁更简单？</h3><p>先让我们来看一个软件安装的例子：</p>
+<ol>
+<li>一键命令行安装。如 <code>curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh</code></li>
+<li>按步就班下载和使用。如打开官网，找到对应的平台（操作系统）下载可执行文件，打开安装软件，执行安装步骤，一步步进行。</li>
+</ol>
+<p>这是 Rust 官方提供的两种不同的 Rust 安装方式。</p>
+<h3 id="谁的引入更简单？"><a href="#谁的引入更简单？" class="headerlink" title="谁的引入更简单？"></a>谁的引入更简单？</h3><p>再看个使用软件的例子：</p>
+<ol>
+<li>README 即起步文档，添加依赖，复制示例代码。</li>
+<li>README 里没有起步，需要跳转到文档网站，添加依赖，添加构建脚本，复制示例代码。</li>
+</ol>
+<p>两者都是 Rust 里的语法解析器，前者是拥有 2.2k stars 的 pest，后者则是拥有 1.7k stars 的 lalrpop。</p>
+<p>这里，先不讨论两个不同的库在开发上的区别，从直观感受来说，我们就可以直接区别。</p>
+<h3 id="起步谁更快？"><a href="#起步谁更快？" class="headerlink" title="起步谁更快？"></a>起步谁更快？</h3><p>来两看两个上手指南</p>
+<ol>
+<li>学习新的语言，学习新的语法，入门文档很长（start），还需要编译，文档不易访问。</li>
+<li>通过 script 标签引入 ，直接开始编写代码。</li>
+</ol>
+<p>你觉得新手会选择 Vue 还是 Angular？</p>
+<h2 id="开发者体验"><a href="#开发者体验" class="headerlink" title="开发者体验"></a>开发者体验</h2><p>这样一来，我们对于开发者体验都能有一个简单的体会。也就能理解什么是开发者体验了。</p>
+<h3 id="什么是开发者体验？"><a href="#什么是开发者体验？" class="headerlink" title="什么是开发者体验？"></a>什么是开发者体验？</h3><p>开发者体验是指开发人员在使用软件、工具、代码等的体验，它与用户体验类似，只是对象是软件开发人员。将之与国际进行对应，便是开发人员对于针对使用或期望使用的产品、系统或者服务的认知印象和回应。有所不同的是，用户关注的内容变为库，SDK，文档，框架，开源解决方案，通用工具，API 等的开发人员的体验。 </p>
+<p>国内开始关注开发者体验主要有以下的一些原因：</p>
+<ul>
+<li>外部开源。即越来越多的开发人员开源了自己的软件，迫切地需要提升软件的体验。</li>
+<li>内部开源。在内部通过开源来进行部门之间的协同效应。</li>
+<li>内部基础设施共享。让内部的开发人员使用内部的基础设施时，获得比外部开源软件更好的体验，提升其在内部的口碑。</li>
+<li>API 经济。对外提供 API，需要与更多的业内组织竞争。</li>
+<li>云原生。云厂商面向开发者提供服务。</li>
+<li>生态构建。面向合作伙伴需要提供更便捷的接入服务。</li>
+<li>SDK 等工具提供方。</li>
+<li>……</li>
+</ul>
+<p>原因多种多样，但是其核心都是想通过开发者体验来提升竞争力。</p>
+<h2 id="开发者体验六要素"><a href="#开发者体验六要素" class="headerlink" title="开发者体验六要素"></a>开发者体验六要素</h2><p>再次强调一下：关注开发者体验之前，应该确保核心功能：完善 + 稳定。即你需要提供可用、稳定的特性，再去提升总体的用户体验。除非，对于你的系统来说，你在一开始就不缺用户。</p>
+<p>从我在开发社区的使用经验、网上了解的相关信息以及与一些专业人士的沟通中，我认为以下几点是进行 DX 时要考虑的要素：</p>
+<ul>
+<li>错误呈现。即出错时，以何种方式来呈现。</li>
+<li>文档体验。</li>
+<li>易用性。如何简化开发。</li>
+<li>交互式。降开发者学习成本。</li>
+<li>触点。让更多的人知道这个软件。</li>
+<li>支持。</li>
+</ul>
+<p>太长不看版：</p>
+<table>
+<thead>
+<tr>
+<th>错误呈现</th>
+<th>文档体验</th>
+<th>易用性</th>
+<th>交互式</th>
+<th>触点</th>
+<th>支持</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>错误描述</td>
+<td>开发者门户</td>
+<td>一键式安装</td>
+<td>低配置/零配置</td>
+<td>文章</td>
+<td>问题反馈渠道</td>
+</tr>
+<tr>
+<td>报错即文档</td>
+<td>发布日志</td>
+<td>自动化版本迁移工具</td>
+<td>声明式使用</td>
+<td>演讲/分享</td>
+<td>问题响应时间</td>
+</tr>
+<tr>
+<td>报错即修改建议</td>
+<td>代码生成文档</td>
+<td>自助式搭建</td>
+<td>可交互文档</td>
+<td>Hackathon</td>
+<td>开发者即服务</td>
+</tr>
+<tr>
+<td></td>
+<td>版本迁移指南</td>
+<td></td>
+<td>沙盒及产品环境</td>
+<td></td>
+<td>开发者社区</td>
+</tr>
+</tbody></table>
+<p>可能还有其它内容，如果有的话，欢迎与我探讨。</p>
+<h3 id="错误呈现"><a href="#错误呈现" class="headerlink" title="错误呈现"></a>错误呈现</h3><p>PS：出于安全原因，有些内容不适合在外部暴露，因此并不建议所有的东西都应该对外呈现。</p>
+<p>对于开发者体验来说，错误呈现就是让开发者有办法快速定位问题和修改问题。常见的一些可优化的部分是：</p>
+<ul>
+<li>错误描述。即软件的出错以合理的方式描述出来，可能是一段文字，一个错误码等。</li>
+<li>报错即网站。即复杂的出错场景里，可以通过可访问的链接来告诉开发者如何修改问题。</li>
+<li>报错即修改建议。即出错时，告诉开发人员可以尝试以下的方式来修改问题。</li>
+</ul>
+<p>这里，我们可以看一个 Rust 出错的示例：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">error<span class="token punctuation">[</span>E0425<span class="token punctuation">]</span>: cannot <span class="token function">find</span> value <span class="token variable"><span class="token variable">`</span>RE_ACCESS<span class="token variable">`</span></span> <span class="token keyword">in</span> this scope
+<span class="token punctuation">..</span>.
+177 <span class="token operator">|</span>           <span class="token keyword">if</span> <span class="token keyword">let</span> Some<span class="token punctuation">(</span>capts<span class="token punctuation">)</span> <span class="token operator">=</span> RE_ACCESS.captures<span class="token punctuation">(</span>line<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+    <span class="token operator">|</span>                                ^^^^^^^^^ help: a static with a similar name exists: <span class="token variable"><span class="token variable">`</span>RE_CLASS<span class="token variable">`</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>虽然，这个提醒不一定那么智能。但是，它在帮助定位问题的同时，还在一定程度上来解决一点问题。</p>
+<h3 id="文档体验"><a href="#文档体验" class="headerlink" title="文档体验"></a>文档体验</h3><p>文档是一种传统知识的载体。优秀的程序员即能通过代码来传递知识，还会通过文档来表达自己。</p>
+<blockquote>
+<p>软件编程即理论建立与传递。 ——  Peter Naur</p>
+</blockquote>
+<p>对于文档来说，依旧的，我们还会关注于：</p>
+<ul>
+<li>开发者门户。作为整个知识体系的承载</li>
+<li>发布日志/更新日志。即 CHANGELOG.md</li>
+<li>代码生成文档。</li>
+<li>版本迁移指南。针对于出现 Breaking Change 的场景，需要详细给出每一部分的迁移示例。</li>
+<li>测试用例。在开源世界里，除了文档，还有测试用例可以读懂一些特别的用法。</li>
+</ul>
+<p>开发者门户是一个复杂的话题，后面我们会再介绍。如下是 D3.js 6.0 的 <a target="_blank" rel="noopener" href="https://observablehq.com/@d3/d3v6-migration-guide">migration guide</a>  示例：</p>
+<pre><code>For example,
+
+  selection.on(&quot;mousemove&quot;, function(d) &#123;
+    … do something with d3.event and d…
+  &#125;)
+
+becomes:
+
+  selection.on(&quot;mousemove&quot;, function(event, d) &#123;
+    … do something with event and d …
+  &#125;)</code></pre>
+<p>我们还会在易用性里提供更好的方式。</p>
+<h3 id="易用性"><a href="#易用性" class="headerlink" title="易用性"></a>易用性</h3><p>易用性本身是非常难度量的，</p>
+<ul>
+<li> 一键式安装。可以是一行命令，也可以是 <code>1-click</code> 之类的。</li>
+<li>自动化版本迁移工具。即针对于版本升级时的 API 修改，可以提供自动修改工具，典型的如 Angular CLI 来升级 Angular。</li>
+<li>自助式搭建。如 Spring Initializr，可以让开发人员选择合适的服务和工具，而后生成项目等。</li>
+</ul>
+<p>在高中时期，我尝试了市面上的一个又一个 GNU/Linux 改行版。如 Ubuntu 和 OpenSuSE 会向我们寄一些安装 CD/DVD，用来帮助新手快速安装 GNU/Linux 操作系统。在我体验了 OpenSuSE 之后，我被它文档上的 <code>Install software via 1-click</code> 所惊艳（当时年轻）。</p>
+<p>如我们找到了中文输入法：Fcitx （<a target="_blank" rel="noopener" href="https://zh.opensuse.org/Fcitx">https://zh.opensuse.org/Fcitx</a>），文档上包含了各种的介绍、如何安装，以及一键安装 —— 现今的 macOS 和 Windows 似乎也没有这样的功能。</p>
+<h3 id="交互式"><a href="#交互式" class="headerlink" title="交互式"></a>交互式</h3><p>在各类 PAAS 服务流行的今天，交互式的 API 体验已经成为了一个主流的方式。进细一步地，我们可以</p>
+<ul>
+<li>低配置/零配置。人们为了灵活性而引入的各种配置本身是反人性的，大部分的配置应该是内置的，不应该由普通的开发者来配置。</li>
+<li>声明式使用。即 API 应该尽可能简化，只需要简单的声明即可使用。</li>
+<li>可交互文档。如 Swagger 可以在线尝试 API。</li>
+<li>沙盒及产品环境。即提供一个在线的类可编程环境。</li>
+</ul>
+<p>最典型的一些例子就是现代化的编程语言里提供的 Playground，如 Golang 和 Rust 都提供了 Playground。它可以让开发人员查看文档，同时运行应用的代码，还能修改代码并运行。</p>
+<h3 id="触点"><a href="#触点" class="headerlink" title="触点"></a>触点</h3><p>触点是指如何去提供加深与开发者的关系。虽然有一个更专业的名称是『开发者关系』，但是它有一个更复杂的模型。这里就简化为触点，意思就是如何与开发者进行接触的点：</p>
+<ul>
+<li>内容/文章</li>
+<li>演讲/分享</li>
+<li>Hackathon/黑客松</li>
+<li>论坛。只在形成一定规模时才考虑</li>
+</ul>
+<p>从某种意义上来说，它是叫推广，但是呢，从个人的角度来看，触点这个用法比推广好得多 —— 触点可以让你意识到：现有的机制是不是无法连接到更多的开发者。</p>
+<h3 id="支持"><a href="#支持" class="headerlink" title="支持"></a>支持</h3><p>这部分就是对于开发人员的支持了，每个人也都非常熟悉：</p>
+<ul>
+<li>问题反馈渠道</li>
+<li>问题反馈与响应</li>
+<li>开发者即服务。源自我之前的一篇文章《<a target="_blank" rel="noopener" href="https://www.phodal.com/blog/developer-as-a-services/">开发者即服务</a>》，意指开发者一对于指导问题。</li>
+<li>开发者社区。</li>
+</ul>
+<p>再说说开发者即服务，是（Developer-as-a-Service）的，亦可称为 “按需即用的开发者”。即当开发者使用某一工具、库，遇到任何相关的问题，可以随时找开发者为我们提供服务。哪怕是使用者使用了我们的 A 框架，但是遇到 B 框架有问题，他/她们也会觉得 A 框架有问题 ——因为 A 框架的开发者们是一种服务，一种开箱即用的服务。</p>
+<h2 id="度量开发者体验"><a href="#度量开发者体验" class="headerlink" title="度量开发者体验"></a>度量开发者体验</h2><p>考虑到度量开发者体验是一个复杂的问题，这里只简单列一下我所认为的两个易于度量维度：</p>
+<ul>
+<li>首次运行所需时间</li>
+<li>文档触达速度</li>
+</ul>
+<p>其它的则是<strong>常规度量指标</strong>，以及对于开发者门户的度量。</p>
+<h3 id="首次运行所需时间"><a href="#首次运行所需时间" class="headerlink" title="首次运行所需时间"></a>首次运行所需时间</h3><blockquote>
+<p>首次运行所需时间即开发人员从接触到创建第一个可运行的应用或者测试等所需的时间。</p>
+</blockquote>
+<p>它可以让我们关注于：</p>
+<ul>
+<li>设计最小的使用步骤</li>
+<li>提供更好的 Get Started 设计</li>
+<li>提供有限次数限制的 Demo Token。</li>
+<li>更快的体验速度。对于下载服务，采用 CDN，适用于国内网络的下载机制。</li>
+<li>……</li>
+</ul>
+<p>这个指标体系可以帮助我们，理解开发人员在过程中遇到的过程痛苦。</p>
+<h3 id="文档触达速度"><a href="#文档触达速度" class="headerlink" title="文档触达速度"></a>文档触达速度</h3><blockquote>
+<p>文档触达速度，即从修改完文档到所有开发人员可见所需的时间。</p>
+</blockquote>
+<p>我们最常见的一个例子是 GitHub Pages，当我们更新完文档时，它可以实现分钟级的部署。这个维度的指标的目的主要是：</p>
+<ul>
+<li>有意识地加快文档更新过程</li>
+<li>让经常出错的问题可以快速更新</li>
+<li>提醒开发人员修复了哪些问题</li>
+</ul>
+<p>它可以让问题的反馈快起来。</p>
+<h3 id="常规度量指标"><a href="#常规度量指标" class="headerlink" title="常规度量指标"></a>常规度量指标</h3><p>接下来，就是我们常见的一些指标，受限于框架和 SDK 等的不同会有些变化 ，典型的如：</p>
+<ul>
+<li>API 响应时间 </li>
+<li>API 出错率</li>
+<li>API（可选），『每周活跃调用者数』、『API 响应时长』</li>
+</ul>
+<p>对于开发人员，可以展示 <strong>API 情况的 dashboard</strong>，用于展示 API 服务的当前状况，如 GitHub Status。这样一来，就不需要再回答 API 是否挂了的问题。</p>
+<h3 id="开发者门户成熟度模型"><a href="#开发者门户成熟度模型" class="headerlink" title="开发者门户成熟度模型"></a>开发者门户成熟度模型</h3><p>在编写这篇文章的过程中，刚好看到了一篇对于门户的度量模型，《<a target="_blank" rel="noopener" href="http://jennywanger.com/speaking/dx-maturity-model/">How Mature Are You? A Developer Experience API Maturity Model</a>》简单地翻译了一些<strong>国内适用</strong>的部分（详细见原文）：</p>
+<table>
+<thead>
+<tr>
+<th>Level 1</th>
+<th>Level 2</th>
+<th>Level 3</th>
+<th>Level 4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>封闭的系统</td>
+<td>门户是自服务的，但是不连贯的</td>
+<td>完全自服务</td>
+<td>可个性化的统一门户</td>
+</tr>
+<tr>
+<td>文档缺乏成功调用 API 的信息</td>
+<td>1 天内可以调用  API</td>
+<td>10 分钟内可以调用 API</td>
+<td>分钟级 API 调用</td>
+</tr>
+<tr>
+<td>API 和功能没有正确对应</td>
+<td>快速开始指南、修改日志和教程</td>
+<td>提供沙盒和生产环境</td>
+<td>认证流程</td>
+</tr>
+<tr>
+<td>响应问题需要一周的时间</td>
+<td>交互式文档</td>
+<td>代码示例和库</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>问题在 2 ~ 3 天内被回答</td>
+<td>24 小时回答问题</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="如何提升开发者体验"><a href="#如何提升开发者体验" class="headerlink" title="如何提升开发者体验"></a>如何提升开发者体验</h2><p>从个人的角度来看，提升开发者体验是一个相对麻烦的过程。除了上述的两个指标之外，我觉得还有两种方式可以帮助提升开发者体验：</p>
+<ul>
+<li>竞品对比。</li>
+<li>新用户引导流程。</li>
+</ul>
+<p>嗯，基本上和用户体验是类似的。</p>
+<h3 id="竞品对比：看齐"><a href="#竞品对比：看齐" class="headerlink" title="竞品对比：看齐"></a>竞品对比：看齐</h3><p>竞品对比，主要是通过与类似产品的对比，让自己与业内保持一致的水准。</p>
+<p>如下是 Rust 和 Golang 的对比（只选取部分，出自于《<a target="_blank" rel="noopener" href="https://www.konstantinfo.com/blog/android-go-vs-rust-features-similarities-differences/">Android Go vs. Rust: Features, Similarities &amp; Differences</a>》）</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Rust</th>
+<th>Golang</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>性能</td>
+<td>高效能，比Swift语言快一点</td>
+<td>GO和Java的性能不及Rust</td>
+</tr>
+<tr>
+<td>方便性</td>
+<td>零成本运行时抽象，非常容易且安全地用于内存等处理</td>
+<td>使用和管理容易</td>
+</tr>
+<tr>
+<td>易于学习</td>
+<td>需要花时间来学习和掌握用于内存管理的语言抽象</td>
+<td>有完整的开发文档，大量的用户社区</td>
+</tr>
+<tr>
+<td>发展速度</td>
+<td>与Go程序相比，RUST的编译时间更长</td>
+<td>既简单又快速</td>
+</tr>
+<tr>
+<td>并发与并行</td>
+<td>RUST没有具体的并发或异步操作。</td>
+<td>Go 具有例程（轻量级线程）和通道（go例程的通信机制），可简化应用程序的创建过程。具有本机测试机制，可在运行时发出警告。</td>
+</tr>
+</tbody></table>
+<p>通过这样的对比，从其它产品学习。</p>
+<h3 id="新用户引导流程"><a href="#新用户引导流程" class="headerlink" title="新用户引导流程"></a>新用户引导流程</h3><p>站在开发人员的角度出发，梳理新用户从使用过程中的痛点问题。一个详细的例子可以见：<a target="_blank" rel="noopener" href="https://toddmoy.com/sendgrid-journeymap">Onboarding journey</a></p>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>PS：一不小心就把文章写长了……。</p>
+<p>欢迎在评论区进行交流</p>
+<h3 id="开发者关系与布道师"><a href="#开发者关系与布道师" class="headerlink" title="开发者关系与布道师"></a>开发者关系与布道师</h3><p>这是两个岗位或者角色：</p>
+<ul>
+<li>开发者关系，主要是要与身为开发者的用户们建立起良好的关系。</li>
+<li>布道师， 将自己热爱与信仰的技术，持续不辍地传递。</li>
+</ul>
+<p>对于以 SDK、云服务等为主的公司而言，他们都会通过这与之相似的岗位来建立与开发者的联系，从而提升开发者体验。</p>
+<h3 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
+<li>《<a target="_blank" rel="noopener" href="https://toddmoy.com/sendgrid-journeymap">Understanding a Path</a>》</li>
+<li>《<a target="_blank" rel="noopener" href="https://www.apimatic.io/developer-experience-portal/">APIMatic</a>》 构建 Developer Experience Portal SAAS 服务</li>
+<li>《<a target="_blank" rel="noopener" href="https://github.com/backstage/backstage">Backstage</a>》 开源 Developer Portal 构建工具</li>
+<li>《活文档：与代码共同演进》如何让文档活起来</li>
+<li>《<a target="_blank" rel="noopener" href="http://jennywanger.com/speaking/dx-maturity-model/">How Mature Are You? A Developer Experience API Maturity Model</a>》</li>
+</ul>
+</p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a target="_blank" rel="noopener" href="http://twitter.com/home?status=https://dts.plus/digital-tech-strategy-developer-experience/%20数字技术战略研究实验室%20数字技术战略：开发者体验 —— 内部工具的“最后一公里”" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/dts-innersouce/" title="数字技术战略： 内源 —— 超越中台思想的文化方式"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: 数字技术战略： 内源 —— 超越中台思想的文化方式</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2021-tech-strategy/" title="2021 数字技术趋势">下一篇: 2021 数字技术趋势&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">闽ICP备17004100号</a></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-4NVSWS3Z70"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
