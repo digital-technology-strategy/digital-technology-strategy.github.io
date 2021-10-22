@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>https://dts.plus/documentation-engineering-experience-design/</loc>
-        
-        <lastmod>2021-09-27</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/cloud-dev-define-develeoper/</loc>
-        
-        <lastmod>2021-08-16</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://dts.plus/technology-product-marketing/</loc>
         
-        <lastmod>2021-08-15</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/dts-scaling-devops/</loc>
-        
-        <lastmod>2021-07-31</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/dts-innersouce/</loc>
-        
-        <lastmod>2021-07-31</lastmod>
+        <lastmod>2021-10-22</lastmod>
         
     </url>
     
     <url>
         <loc>https://dts.plus/digital-tech-strategy-developer-experience/</loc>
         
-        <lastmod>2021-07-31</lastmod>
+        <lastmod>2021-10-22</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/documentation-engineering-experience-design/</loc>
+        
+        <lastmod>2021-10-22</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/dts-innersouce/</loc>
+        
+        <lastmod>2021-10-22</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/dts-scaling-devops/</loc>
+        
+        <lastmod>2021-10-22</lastmod>
         
     </url>
     
     <url>
         <loc>https://dts.plus/2021-tech-strategy/</loc>
         
-        <lastmod>2021-07-31</lastmod>
+        <lastmod>2021-10-22</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/cloud-dev-define-develeoper/</loc>
+        
+        <lastmod>2021-10-22</lastmod>
         
     </url>
     
 
     <url>
         <loc>https://dts.plus/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -61,105 +61,105 @@
     
     <url>
         <loc>https://dts.plus/tags/DTS/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/Digital-Technologhy/</loc>
-        <lastmod>2021-09-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/tags/%E5%86%85%E6%BA%90/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/Thoughtworks/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/%E5%9B%A2%E9%98%9F%E6%8B%93%E6%89%91/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://dts.plus/tags/%E4%B8%AD%E5%8F%B0/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <loc>https://dts.plus/tags/%E5%86%85%E6%BA%90/</loc>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/%E5%BC%80%E5%8F%91%E8%80%85%E4%BD%93%E9%AA%8C/</loc>
-        <lastmod>2021-09-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E5%8C%96%E8%BD%AC%E5%9E%8B/</loc>
-        <lastmod>2021-09-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/tags/DevOps/</loc>
-        <lastmod>2021-09-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/tags/%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B/</loc>
-        <lastmod>2021-09-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/tags/%E6%8A%80%E6%9C%AF%E4%BA%A7%E5%93%81%E5%8C%96%E8%BF%90%E8%90%A5/</loc>
-        <lastmod>2021-09-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://dts.plus/tags/%E5%BC%80%E6%BA%90/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://dts.plus/tags/%E6%96%87%E6%A1%A3%E5%B7%A5%E7%A8%8B%E4%BD%93%E9%AA%8C/</loc>
-        <lastmod>2021-09-28</lastmod>
+        <lastmod>2021-10-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/tags/%E4%B8%AD%E5%8F%B0/</loc>
+        <lastmod>2021-10-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/tags/%E6%95%B0%E5%AD%97%E6%8A%80%E6%9C%AF%E5%8C%96%E8%BD%AC%E5%9E%8B/</loc>
+        <lastmod>2021-10-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/tags/DevOps/</loc>
+        <lastmod>2021-10-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/tags/%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B/</loc>
+        <lastmod>2021-10-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/tags/%E6%8A%80%E6%9C%AF%E4%BA%A7%E5%93%81%E5%8C%96%E8%BF%90%E8%90%A5/</loc>
+        <lastmod>2021-10-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://dts.plus/tags/%E5%BC%80%E6%BA%90/</loc>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.6</priority>
     </url>
